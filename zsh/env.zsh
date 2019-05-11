@@ -19,12 +19,14 @@ setopt EXTENDED_HISTORY
 
 export LANG="en_US.UTF-8"
 
-export PATH="$HOME/.composer/vendor/bin:$HOME/.rbenv/bin:$HOME/node_modules/.bin:$HOME/.rbenv/shims:$HOME/.composer/vendor/bin:$PATH"
-
+export PATH="$HOME/.composer/vendor/bin:$HOME/.rbenv/bin:$HOME/node_modules/.bin:$HOME/.rbenv/shims:$HOME/.composer/vendor/bin:$PATH:/opt/local/bin:/opt/local/sbin:$PATH"
 eval "$(rbenv init -)"
 
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+#source /usr/bin/virtualenvwrapper.sh
+
 # bash completion
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+#[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 # added by Anaconda3 5.3.1 installer
 # >>> conda init >>>
